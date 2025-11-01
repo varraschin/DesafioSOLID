@@ -19,7 +19,10 @@ public class Restaurante
 {
     private readonly ICozinha _cozinha;
 
-    public Restaurante(ICozinha cozinha);
+    public Restaurante(ICozinha cozinha)
+    {
+        _cozinha = cozinha;
+    }
 
     public void ServirPrato()
     {
